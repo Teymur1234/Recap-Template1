@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menuicon{
+    display: none;
+    cursor: pointer;
+}
+.logo{
+    width: 180px;
+    height: 37px;
+    cursor: pointer;
+}
+nav{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    z-index: 10;
+    background-color: white;
+    justify-content: space-around;
+    width: 100%;
+}
+.menulinks ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+}
+.menulinks ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menulinks ul li a:hover{
+    color: rgb(42, 163, 42);
+}
+.icons{
+    display: flex;
+    gap: 8px;
+}
+.icons svg{
+    cursor: pointer;
+    font-size: 25px;
+}
+.sidebar-menu{
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background-color: white;
+    width: 270px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    left: -270px;
+    align-items: center;
+    transition: 0.7s;
+}
+.sidebar-menu.open{
+    left: 0;
+}
+.sidebar-menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-menu ul li{
+    width: 99.5%;
+    height: 40px;
+    border: 1px solid gray;
+}
+.sidebar-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.tab{
+    width: 100%;
+    display: flex;
+}
+.tab div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    border: 1px solid black ;
+    cursor: pointer;
+}
+.close-button{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #4B9E22;
+    border: none;
+    cursor: pointer;
+}
+.style{
+    color: white;
+    background-color: black;
+}
+.form form{
+    display: flex;
+    width: 100%;
+    height: 380px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.form input{
+    width: 180px;
+    height: 40px;
+    outline: none;
+}
+.form form p{
+    cursor: pointer;
+}
+.form form h4{
+    cursor: pointer;
+}
+.form form button{
+    width: 230px;
+    height: 35px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.basket{
+    position: relative;
+}
+.say{
+    position: absolute;
+    top: -8px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    align-items: center;
+    color: white;
+    background-color: black;
+    left: 16px;
+}
+.sidebar-basket{
+    height: 100%;
+    top: 0;
+    width: 320px;
+    position: fixed;
+    right: -320px;
+    background-color: #F7F7F7;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    transition: 0.7s;
+}
+.sidebar-basket div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar-basket div:first-child svg{
+    font-size: 28px;
+    cursor: pointer;
+}
+.sidebar-basket div:first-child h3{
+    margin-right: 5px;
+}
+.sidebar-basket.opening{
+    right: 0;
+}
+.product-sidebar{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    display: flex;
+    gap: 10px;
+}
+.product-sidebar div{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 70px;
+}
+.product-sidebar img{
+    width: 45px;
+    height: 45px;
+}
+.go-checkout{
+    align-self: center;
+    height: 45px;
+    width: 270px;
+    background-color: black;
+    color: white;
+}
+.wishlist-sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  .wishlist-sidebar.open{
+    right: 0;
+  }
+  .wishlist-sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .wishlist-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .wishlist-sidebar li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+  }
+  
+  .wishlist-sidebar img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .wishlist-sidebar button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .wishlist-sidebar button:hover {
+    background-color: #c82333;
+  }
+  
+@media only screen and (max-width: 450px){
+
+}
+@media only screen and (max-width: 600px){
+
+}
+@media only screen and (max-width: 777px){
+
+}
+@media only screen and (max-width: 991px){
+    nav{
+        justify-content: space-between;
+        
+    }
+   .menulinks{
+    display: none;
+   }
+   .menuicon{
+    display: block;
+    margin-left: 5px;
+   }
+   .icons{
+    margin-right: 5px;
+   }
+   .icons svg:nth-of-type(2){
+    display: none;
+   } 
+   .icons svg:nth-of-type(3){
+    display: none;
+   }
+}
+@media only screen and (min-width: 1200px) {
+
+}
